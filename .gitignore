@@ -1,0 +1,25 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform lock/state files (state should live in a remote backend)
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# tfvars often contain sensitive/environment-specific values
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+# CLI config files
+.terraformrc
+terraform.rc
+
+# Build artifacts
+build/
+*.zip
+
+# IDE
+.vscode/
+.idea/

@@ -1,0 +1,16 @@
+aws_region    = "us-east-1"
+function_name = "RecoveryEventForwarder"
+
+event_bus_name = "aws.partner/datadog.com/recovery-bus-yzp9s74x"
+rule_name      = "recovery-rule-forward-to-lambda"
+
+destination_account_ids = [
+  "945203152184",
+  "106948908544",
+]
+
+tags = {
+  Project     = "recovery-event-forwarder"
+  ManagedBy   = "terraform"
+  Environment = "prod"
+}
